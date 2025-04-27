@@ -111,7 +111,7 @@
             .secondSection{
                 max-width:80vw;
                 margin: auto;
-                height: 80vh;
+                height: 141vh;
             }
 
             .secondSection h1{
@@ -130,7 +130,7 @@
                 height: 93px;
                 width: 1px;
                 background-color: white;
-                margin: 0 100px;
+                margin: 0 6vw;
             }
 
             .image-top{
@@ -179,6 +179,62 @@
                 color: gray;
                 padding: 12px 0;
             }
+
+            @media screen and (max-width: 1400px){
+              body{
+               min-width : fit-content;
+              }
+              .box{
+                flex-direction: column;
+              }
+              .secondSection .vertical{
+                height: unset;
+              }
+              .vertical-title, .vertical-desc{
+                left: 45px;
+              }
+              .secondSection .box{
+                width : 50;
+                
+              }
+              nav{
+                flex-direction:column;
+              }
+             
+              .firstSection{
+                display: flex;
+                flex-direction : column-reverse;
+                justify-content: center;
+              }
+              .leftSection{
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+               
+              }
+              .rightSection{
+                width: 1200px !important;
+                display: flex;
+                justify-content: center;
+              }
+
+              .rightSection img{
+                width: 45vw;
+                margin-bottom: 73px;
+              }
+
+              .image-top{
+                top: 133px;
+              }
+              .secondSection{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+              }
+            }
+
     </style>
   </head>
   <body>
@@ -200,7 +256,7 @@
     <main>
       <section class="firstSection">
         <div class="leftSection">
-          Hi, My name is <span class="purple">Shashi</span>
+          <div>Hi, My name is <span class="purple">Shashi</span></div>
           <div>and I am a passionate</div>
           <span id="element"></span>
           <div class="buttons">
