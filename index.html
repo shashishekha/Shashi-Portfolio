@@ -59,7 +59,7 @@
             }
 
             .left{
-              font-size: 1.5 rem;
+              font-size: 1.5rem;
             }
 
             .firstSection{
@@ -179,10 +179,11 @@
                 color: gray;
                 padding: 12px 0;
             }
+            
 
-            @media screen and (max-width: 1400px){
+            @media screen and (max-width: 1200px){
               body{
-               min-width : fit-content;
+               {% comment %} min-width : fit-content; {% endcomment %}
               }
               .box{
                 flex-direction: column;
@@ -194,7 +195,7 @@
                 left: 45px;
               }
               .secondSection .box{
-                width : 50;
+                width : 50px;
                 
               }
               nav{
